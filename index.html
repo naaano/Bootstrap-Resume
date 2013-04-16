@@ -17,7 +17,7 @@
     <![endif]-->
   </head>
   <body>
-    <div class='navbar navbar-inverse navbar-fixed-top'>
+    <div class='navbar navbar-inverse navbar-fixed-top' id='navbar'>
       <div class='navbar-inner'>
         <div class='container'>
           <a class='btn btn-navbar' data-target='.nav-collapse' data-toggle='collapse'>
@@ -48,34 +48,34 @@
               </li>
             </ul>
           </div>
-          <!-- /.nav-collapse -->
         </div>
       </div>
     </div>
-    <div data-offset='20' data-spy='scroll' data-target='.navbar' id='wrap'>
+    <div data-offset='20' data-spy='scroll' data-target='#navbar' id='wrap'>
       <div class='container-fluid'>
         <br id='about'>
         <div class='row-fluid section'>
           <div class='span9 hero-unit'>
             <h1>Hernán Astudillo</h1>
-            <p>Hernán is an entrepreneur, senior web developer and linux/unix SysAdmin. Mostly dedicated to Ruby On Rails, servers architecture design, and optimize teamwork</p>
+            <p>Hernán is an entrepreneur, senior web developer and linux/unix SysAdmin. Mostly dedicated to Ruby On Rails, servers architecture design, and optimize tea mwork</p>
             <p>
               <a class='btn btn-inverse btn-large' href='#contact'>Contact Me;</a>
             </p>
           </div>
-          <div class='span3'>
+          <div class='span3' id='contact-info'>
             <div class='picture'>
               <img src='img/photo.jpg'>
             </div>
             <address>
-              <br>
+              <span class='phone'></span>
+              <span class='skype'>
                 <a href='skype:hastudillo?call'></a>
                 <img src='img/skype_icon.gif'>hastudillo</img>
-              </br>
-              <br>
+              </span>
+              <span class='website'>
                 <a href='www.3web.cl'>www.3web.cl</a>
-              </br>
-              <br>Santiago, Chile</br>
+              </span>
+              <span class='location'>Santiago, Chile</span>
             </address>
             <div class='social'>
               <strong>Follow:</strong>
@@ -163,17 +163,18 @@
         <div class='row-fluid section'>
           <div class='span12'>
             <h2>Education</h2>
-            <h3>Universidad de Chile, Facultad de Ciencias Físicas y Matemáticas</h3>
+            <h3>Some Campus, Some University</h3>
             <p>
               <strong>
                 Civil Engineering in Computer Science
               </strong>
             </p>
-            <p>untitled</p>
-            <h3>De La Salle</h3>
+            <p>some description</p>
+            <h3>Some Other</h3>
             <p>
               <strong>High School</strong>
             </p>
+            <p>Some stuff</p>
           </div>
         </div>
         <hr id='experience'>
@@ -181,10 +182,10 @@
           <div class='span12'>
             <h2>Experience</h2>
             <h3>
-              DIRECON
+              Some Company
               <small>2011 - Present</small>
             </h3>
-            <p>lead developer, team coordination, project developing environment builder.</p>
+            <p>This position. Did this and that. I had this goals. I rock.</p>
           </div>
         </div>
         <hr id='contact'>
@@ -192,7 +193,7 @@
           <div class='span12'>
             <h2>Contact</h2>
             Email
-            <a href='mailto:naaano@gmail.com'>naaano [at] gmail [dot] com</a>
+            <a href='mailto:your-email-here@gmail.com'>your-email-here [at] something [dot] com</a>
           </div>
         </div>
       </div>
@@ -201,8 +202,18 @@
     <!-- /wrap -->
     <footer id='footer'>
       <p>
-        
+        <p><a href="https://github.com/naaano/Bootstrap-Resume">Bootstrap resume</a> developed by <a href="https://github.com/naaano">naaano</a>, forked from <a href="http://youmetandy.com">Andy Brudtkuhl</a>&#39;s awesome <a href="https://github.com/abrudtkuhl/Bootstrap-Resume">design</a> </p>
       </p>
     </footer>
+    <!-- Javascripts -->
+    <script src='js/jquery-1.9.0.min.js'></script>
+    <script src='js/bootstrap.min.js'></script>
+    <script>
+      $("#navbar").scrollspy();
+    </script>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      
+    </script>
   </body>
 </html>

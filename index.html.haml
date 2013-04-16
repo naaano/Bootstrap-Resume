@@ -15,7 +15,7 @@
       %link{:href => "font-awesome-ie7.min.css", :rel => "stylesheet"}/
       %script{:src => "http://html5shim.googlecode.com/svn/trunk/html5.js"}
   %body
-    .navbar.navbar-inverse.navbar-fixed-top
+    #navbar.navbar.navbar-inverse.navbar-fixed-top
       .navbar-inner
         .container
           %a.btn.btn-navbar{"data-target" => ".nav-collapse", "data-toggle" => "collapse"}
@@ -37,26 +37,26 @@
                 %a{:href => "#experience"} Experience
               %li
                 %a{:href => "#contact"} Contact
-          / /.nav-collapse
-    #wrap{"data-offset" => "20", "data-spy" => "scroll", "data-target" => ".navbar"}
+    #wrap{"data-offset" => "20", "data-spy" => "scroll", "data-target" => "#navbar"}
       .container-fluid
         %br#about/
         .row-fluid.section
           .span9.hero-unit
             %h1 Hernán Astudillo
-            %p Hernán is an entrepreneur, senior web developer and linux/unix SysAdmin. Mostly dedicated to Ruby On Rails, servers architecture design, and optimize teamwork 
+            %p Hernán is an entrepreneur, senior web developer and linux/unix SysAdmin. Mostly dedicated to Ruby On Rails, servers architecture design, and optimize tea mwork 
             %p
               %a.btn.btn-inverse.btn-large{:href => "#contact"} Contact Me;
-          .span3
+          #contact-info.span3
             %div.picture
               %img{:src => "img/photo.jpg"}
             %address
-              %br
+              %span.phone
+              %span.skype
                 %a{:href => "skype:hastudillo?call"}
                 %img{:src => "img/skype_icon.gif"} hastudillo
-              %br 
+              %span.website 
                 %a{:href => "www.3web.cl"} www.3web.cl
-              %br Santiago, Chile
+              %span.location Santiago, Chile
             %div.social
               %strong Follow:
               %a{:href => "http://twitter.com/hastudillo"}
@@ -123,39 +123,41 @@
         .row-fluid.section
           .span12
             %h2 Education
-            %h3 Universidad de Chile, Facultad de Ciencias Físicas y Matemáticas
+            %h3 Some Campus, Some University
             %p
               %strong
                 Civil Engineering in Computer Science
-            %p untitled 
-            %h3 De La Salle
+            %p some description
+            %h3 Some Other
             %p
               %strong High School
+            %p Some stuff
         %hr#experience/
         .row-fluid.section
           .span12
             %h2 Experience
             %h3
-              DIRECON
+              Some Company
               %small 2011 - Present
-            %p lead developer, team coordination, project developing environment builder.  
+            %p This position. Did this and that. I had this goals. I rock.    
         %hr#contact/
         .row-fluid.section
           .span12
             %h2 Contact
             Email
-            %a{:href => "mailto:naaano@gmail.com"} naaano [at] gmail [dot] com
+            %a{:href => "mailto:your-email-here@gmail.com"} your-email-here [at] something [dot] com
       / /container
     / /wrap
     %footer#footer
       %p
         :markdown
-        [Bootstrap resume](https://github.com/naaano/Bootstrap-Resume) developed by [naaano](https://github.com/naaano), forked from [Andy Brudtkuhl](http://youmetandy.com)'s awesome [design](https://github.com/abrudtkuhl/Bootstrap-Resume) 
+          [Bootstrap resume](https://github.com/naaano/Bootstrap-Resume) developed by [naaano](https://github.com/naaano), forked from [Andy Brudtkuhl](http://youmetandy.com)'s awesome [design](https://github.com/abrudtkuhl/Bootstrap-Resume) 
     / Javascripts
+
     %script{:src => "js/jquery-1.9.0.min.js"}
     %script{:src => "js/bootstrap.min.js"}
     :javascript
-      $(".navbar").scrollspy();
+      $("#navbar").scrollspy();
     / Google Analytics: change UA-XXXXX-X to be your site's ID.
     :javascript
 
