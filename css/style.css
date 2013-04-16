@@ -7,6 +7,7 @@ body { background: url('../img/bg.png'); font-family: 'Open Sans', sans-serif; }
 
 @media only screen and (max-width: 767px) {
 	#image-profile { display: none; }
+	#contact-info {padding: 10px;}
 }
 
 @media only screen and (max-width : 566px) {
