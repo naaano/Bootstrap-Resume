@@ -1,12 +1,13 @@
 Bootstrap Resume
 ================
-A Bootstrap Resume theme built for http://YouMetAndy.com utilizing Scrollspy
+A Bootstrap Resume theme originally developed by [abrudtkuhl](https://github.com/abrudtkuhl/Bootstrap-Resume)
+Added bootstrap bars for skills measurement
+Profile pic
+Header reordering
 
 Resources
 ================
--Twitter Bootstrap  
--jQuery
+- Twitter Bootstrap  
+- Font Awesome
+- jQuery
 
-Questions?
-================
-Ask @abrudtkuhl on Twitter
